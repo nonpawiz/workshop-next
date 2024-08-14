@@ -1,0 +1,17 @@
+# setup backend
+docker-compose build
+docker-compose up -d
+
+# check container
+docker ps -a
+
+# exce mysql
+docker exec -it ba1c1eed9995 /bin/sh
+
+# setup backend
+# docker-compose build
+# docker-compose up -d
+# composer install
+# docker exec -it php /bin/sh
+# chmod -R 777 storage
+# php artisan key:generate
